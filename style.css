@@ -1,0 +1,32 @@
+/* Global stylesheet for Smart Prison Management System */
+:root{--bg:#f7f8fb;--card:#ffffff;--text:#111827;--muted:#6b7280;--accent:#2563eb;--danger:#dc2626}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+.container{max-width:1100px;margin:28px auto;padding:0 16px}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.brand{font-size:28px;font-weight:700}
+nav a{color:var(--accent);text-decoration:none;margin-right:14px}
+.card{background:var(--card);border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+h1,h2{margin:0 0 12px}
+/* Buttons */
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn.small{padding:6px 8px;font-size:14px}
+/* Forms */
+form input, form select, form textarea{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:8px;font-size:15px}
+label{display:block;margin-bottom:8px;color:var(--muted)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+/* Tables */
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th{font-weight:600;text-align:left;padding:12px;border-bottom:1px solid #eef2f7;color:var(--muted)}
+td{padding:12px;border-bottom:1px solid #f3f4f6}
+.contact{color:var(--muted)}
+.actions button{margin-right:8px;border-radius:6px;padding:6px 8px;border:1px solid #d1d5db;background:#fff;cursor:pointer}
+/* Responsive */
+@media (max-width:900px){.form-grid{grid-template-columns:1fr}.container{padding:0 12px}table,thead,tbody,th,td,tr{display:block}thead{display:none}td{padding:10px;position:relative}td:before{content:attr(data-label);display:block;font-weight:600;margin-bottom:6px}}
+
+/* Dashboard vertical navigation */
+.vertical-nav{margin:12px 0;padding:0}
+.vertical-nav a{display:block;margin:8px 0;color:var(--accent);text-decoration:none}
+.vertical-nav a:hover{text-decoration:underline}
